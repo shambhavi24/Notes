@@ -1,0 +1,42 @@
+SH194$9948ha*
+https://vrotstsrv.infosolco.com:8281/vco
+https://10.216.21.220:8281/vco/
+
+
+Prod VRO:
+https://10.216.21.220:8281/vco/   >> Start orchestrator client and open the client downloaded
+NTT-SA-DSO-SVR-Build
++jHN,/*8UGNuc!3us
+
+DEV vRO:
+https://vrotstsrv.infosolco.com:8281/vco
+vrotest
+vcenterlab
+
+root
+clgxRed08
+
+Administratorl
+L1gHtNing!
+
+
+To list unmounted filesystems
+lsblk --noheadings --raw -o NAME,MOUNTPOINT | awk '$1~/[[:digit:]]/ && $2 == ""'
+
+To find if the directory is a mount point
+findmnt /opt; echo $                          >> /opt is the directory
+
+to find filesystem type
+fsck -N /dev/sda1				>> /dev/sda1 is the filsystem
+or
+lsblk -f | awk 'print{$2}'
+
+
+Run Command:
+var cmdLine = "ping -c 2 " + arg_in_ipOrHost;
+
+command = new Command(cmdLine);
+System.log(command);
+returnCode = command.execute(true);
+System.log("ReturnCode: " + returnCode);
+System.log("Output: " + command.output);
